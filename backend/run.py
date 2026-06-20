@@ -1,9 +1,10 @@
 import os
 import sys
 
-# Ensure backend directory is in python path so imports function correctly
+# Ensure backend directory and its subdirectories are in python path so imports function correctly
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), "app"))
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), "ml"))
 
 from ml.train import train_model
 
