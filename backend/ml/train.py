@@ -27,8 +27,8 @@ def train_model(epochs=15, batch_size=32, model_save_path="model.pth"):
 
     # 2. Datasets & Loaders
     print("Generating synthetic datasets...")
-    train_dataset = RootResorptionDataset(size=600, transform=normalize_transform)
-    val_dataset = RootResorptionDataset(size=150, transform=normalize_transform)
+    train_dataset = RootResorptionDataset(size=600, transform=transform)
+    val_dataset = RootResorptionDataset(size=150, transform=transform)
     
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
     val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
