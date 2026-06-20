@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# Database
+*.db
+*.db-journal
+*.sqlite3
+
+# IDEs and OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Backend runtime files and storage
+backend/uploads/*
+backend/processed/*
+backend/reports/*
+!backend/uploads/.gitkeep
+!backend/processed/.gitkeep
+!backend/reports/.gitkeep
+
+# Frontend (Android) Build & Cache files
+frontend/.gradle/
+frontend/local.properties
+frontend/app/build/
+frontend/build/
+frontend/.cxx/
+frontend/.externalNativeBuild/
+frontend/*.iml
+frontend/.idea/
+frontend/captures/
